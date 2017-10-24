@@ -1,0 +1,23 @@
+.u-color--white {
+  color: white !important;
+}
+
+.u-color--grey {
+  color: grey !important;
+}
+
+.u-color--primary {
+  color: $suttna-primary-color !important;
+}
+
+.u-text-align--center {
+  text-align: center !important;
+}
+
+$sizes: 12, 14, 16, 18, 20;
+
+@each $size in $sizes {
+  .u-font-size--#{$size} {
+    font-size: #{$size}px;
+  }
+}

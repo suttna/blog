@@ -1,0 +1,39 @@
+.c-footer {
+  padding: 20px $inuit-global-spacing-unit-large 10px $inuit-global-spacing-unit-large;
+  height: 270px;
+  width: $suttna-page-width;
+  margin: 0 auto;
+}
+
+.c-footer-text {
+  line-height: 30px;
+}
+
+.c-footer * {
+  font-weight: 100;
+}
+
+.c-footer-list {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.c-footer-element {
+  display: inline;
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+.c-footer-element:first-child {
+  padding-left: 0px;
+}
+
+.c-footer__sm {
+  position: relative;
+}
+
+.c-footer__sm__list {
+  position: absolute;
+  top: -15px;
+  right: 50px;
+}

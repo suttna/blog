@@ -1,0 +1,9 @@
+.c-container {
+  max-width: 1096px;
+  padding: 0 $inuit-global-spacing-unit-large;
+  margin: 0 auto;
+}
+
+.c-container--full-height {
+  min-height: calc(100vh - 435px);
+}

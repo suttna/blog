@@ -1,0 +1,41 @@
+@import 'inuitcss/elements/elements.page';
+
+html {
+  font-family: Dosis, sans-serif;
+  color: #4f4f4f;
+}
+
+body {
+  background-image: url(asset_path("bg-footer.svg")), url(asset_path("bg-top-transparent.svg"));
+  background-size: 2900px 822px, 3313px 2044px;
+  background-repeat: no-repeat;
+  background-position-y: calc(100% + 450px), -640px;
+  background-position-x: calc(100% / 2), calc((100% / 2) + 210px);
+}
+
+body[data-action="landing_page"] {
+  background-image: url(asset_path("bg-footer.svg")), url(asset_path("bg-top.svg"));
+  background-size: 2900px 822px, 3313px 2044px;
+  background-repeat: no-repeat;
+  background-position-y: calc(100% + 450px), -640px;
+  background-position-x: calc(100% / 2), calc((100% / 2) + 210px);
+}
+
+blockquote {
+  background: #F9F9F9;
+  border-left: 10px solid #AA00D5;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+}
+
+blockquote:before {
+  color: #ccc;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "suttna-blog",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suttna/blog.git"
+  },
+  "keywords": [
+    "suttna",
+    "blog"
+  ],
+  "author": "Santiago Doldán <santiago@suttna.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suttna/blog/issues"
+  },
+  "homepage": "https://github.com/suttna/blog#readme",
+  "dependencies": {
+    "inuitcss": "^6.0.0-beta.5"
+  }
+}

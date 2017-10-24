@@ -1,0 +1,35 @@
+.c-menu {
+  height: 45px;
+}
+
+.c-menu__logo {
+  float: left;
+}
+
+.c-menu__list {
+  float: right;
+}
+
+.c-menu__link {
+  background: white;
+  color: #4F4F4F;
+  display: inline-block;
+  vertical-align: middle;
+  font: inherit;
+  text-align: center;
+  margin: 0 0 0 15px;
+  cursor: pointer;
+  transition: $global-transition;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+}
+
+.c-menu__link--active {
+  color: #7A1DE1;
+}
+
+.c-menu__link:first-child {
+  margin-left: 0;
+}

@@ -1,0 +1,93 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  {{ content }}
+
+  <div class="u-margin-top-large">
+    <div class="o-layout">
+      {% assign first_post = site.posts.first %}
+
+      <a class="c-post" href="{{ first_post.url | relative_url }}">
+        {% if first_post.image %}
+          <div class="o-layout__item u-1/2 u-padding-small">
+            {% img '{{ first_post.image }}' class:'c-post__image c-post__image--rotated' %}
+          </div>
+
+          <div class="o-layout__item u-1/2">
+            <div class="c-post__title  u-margin-top-large">
+              {{ first_post.title | escape }}
+            </div>
+
+            <div class="c-post__content">
+              {{ first_post.content | strip_html | truncatewords: 50 }}
+            </div>
+
+            <div class="c-post__date">
+              {{ first_post.date | date: "%b %-d, %Y" }}
+            </div>
+          </div>
+        {% else %}
+          <div class="o-layout__item">
+            <div class="c-post__title">
+              {{ first_post.title | escape }}
+            </div>
+
+            <div class="c-post__content">
+              {{ first_post.content | strip_html | truncatewords: 150 }}
+            </div>
+
+            <div class="c-post__date">
+              {{ first_post.date | date: "%b %-d, %Y" }}
+            </div>
+          </div>
+        {% endif %}
+      </a>
+    </div>
+
+    <div class="o-layout">
+      {% for post in site.posts offset:2 limit:6 %}
+        <div class="o-layout__item u-1/3 u-margin-top-large">
+          <a class="c-post" href="{{ post.url | relative_url }}">
+            {% if post.image %}
+              <div class="o-block">
+                {% img '{{ post.image }}' class:'c-post__image' %}
+              </div>
+
+              <div class="o-block u-margin-top-small">
+                <div class="c-post__title">
+                  {{ post.title | escape }}
+                </div>
+
+                <div class="c-post__content">
+                  {{ post.content | strip_html | truncatewords: 50 }}
+                </div>
+
+                <div class="c-post__date">
+                  {{ post.date | date: "%b %-d, %Y" }}
+                </div>
+              </div>
+            {% else %}
+              <div class="o-block">
+                <div class="c-post__title">
+                  {{ post.title | escape }}
+                </div>
+
+                <div class="c-post__content">
+                  {{ post.content | strip_html | truncatewords: 110 }}
+                </div>
+
+                <div class="c-post__date">
+                  {{ post.date | date: "%b %-d, %Y" }}
+                </div>
+              </div>
+            {% endif %}
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+</div>
