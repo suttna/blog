@@ -1,0 +1,22 @@
+---
+layout: post
+author: Martín Fernández
+title:  "Welcome to Suttna!"
+date:   2017-12-01 12:00:00 -0300
+categories: suttna welcome blog
+---
+Hello everyone!
+
+First of all we want to thank every single user that has been using Suttna so far. Your feedback has been invaluable to us!
+
+We are going to use the blog for the following purposes:
+
+- Announcements
+- Tips. How to take out the most from Suttna
+- Technical information on how we're building Suttna
+
+We are about to announce some important changes to Suttna. You can stay tuned by subscribing to our newsletter.
+
+If you have any questions or issues your can always contact us at [support@suttna.com](mailto:support@suttna.com) or just use the `@suttna support` command.
+
+We hope that Suttna has been helpful for your team so far 😃
