@@ -12,11 +12,14 @@ $(function () {
       event.preventDefault()
 
       const $form = $(this)
+      const data = {}
+
+      $form.serializeArray().forEach(function (ele) { data[ele.name] = ele.value; });
 
       $.ajax({
         type: 'POST',
         url: $form.prop('target'),
-        data: $form.serialize(),
+        data: JSON.stringify(data),
         contentType: 'application/json',
         dataType: 'json'
       })
