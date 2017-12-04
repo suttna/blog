@@ -21,6 +21,19 @@
   overflow: hidden;
 }
 
+.c-form__item--required:after {
+  content: " *";
+  color: #EB5757;
+  position: absolute;
+  right: 15px;
+  top: 14px;
+  font-size: 25px;
+}
+
+.c-form__item--required {
+  position: relative;
+}
+
 .c-form input, .c-form textarea, .c-form select {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
