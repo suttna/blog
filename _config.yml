@@ -28,6 +28,9 @@ exclude:
   - node_modules
 
 assets:
+  compress:
+    css: sass
+    js:  uglifier
   prefix: "/assets"
   assets:
     - "*.png"
