@@ -3,7 +3,7 @@ layout: post
 author: Martín Fernández
 title:  "Welcome to Suttna!"
 date:   2017-12-01 12:00:00 -0300
-categories: suttna welcome blog
+tags: [suttna, welcome, blog]
 ---
 Hello everyone!
 
