@@ -4,7 +4,7 @@ author: Martín Fernández
 title: "New Web Application"
 image: posts/new-web-app.png
 date: 2017-12-02 12:00:00 -0300
-categories: web application new bot suttna
+tags: [web, application, new, bot, suttna]
 ---
 
 ![App](/assets/posts/new-web-app.png)
