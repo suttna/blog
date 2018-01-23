@@ -22,6 +22,12 @@
 .c-post__content {
   color: #4F4F4F;
   text-align: justify;
+
+  img {
+    background: unset;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .c-post__date {

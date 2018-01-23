@@ -1,0 +1,53 @@
+---
+layout: post
+author: Santiago Doldán
+title: Introducing Threads
+image: posts/threads/threads.png
+categories: slack teams threads bot suttna
+---
+
+![App](/assets/posts/threads/threads.png)
+
+# We are really proud to announce that Suttna now supports threads 😌
+
+When we started building Suttna, our main goal was to let users configure everything without leaving their messaging client.
+
+Having that in mind, our first idea was to create a subset of dialogs where users would be able to just start a conversation running
+a command (e.g. `@suttna configure`) and Suttna will guide them according to what they wanted to do.
+
+<br />
+
+![Excelent Idea](/assets/posts/threads/excelent-idea.jpg)
+
+<br />
+
+One of the aspects that we didn't thought at first was, how much distraction Suttna can create on a particular channel? How can we avoid distracting team members?
+
+### Why should I get 20 message notifications if I'm not even configuring a checkin, right? 🤯
+
+Now that Suttna has a few months running checkins for companies around the globe, we understood that bot conversations are nice, buuut that they can be a bit annoying (just a bit 😅).
+
+So we started collecting feedback from several accounts and decided that it was time to fix it.
+
+Most users asked for a new config option to prevent Suttna messaging the channel right after a user finishes answering their questions,
+so all the summaries would be posted to the channel only once when the checkin finishes, but that was a solution for only one scenario,
+what about commands like `@suttna configure` for example? that would still trigger a notification for each new message.
+
+<br />
+
+![Thinking](/assets/posts/threads/thinking.jpg)
+
+<br />
+
+After thinking about other solutions, we decided to use `threads` (both messaging clients *Slack and MS Teams* support them). Suttna will create a new thread when
+entering a command and continue the conversation right there. This new flow won't generate message notifications and won't send too many messages to the group channel,
+much better of course.
+
+But it wasn't all a bed of roses, the Slack connector ([botbuilder-slack](https://github.com/suttna/botbuilder-slack)) that we've built for
+**Microsoft Botbuilder** didn't support threads, obviously that didn't last too much, one week after our connector supports them 😍.
+Check out here all of our contributions [http://github.com/suttna](http://github.com/suttna).
+
+We love to improve constantly, and your opinion really matter to us! (threads wasn't an exception).
+
+Any feedback will be more than welcome so please, write to the team at [feedback@suttna.com](mailto:feedback@suttna.com) if
+you have anything to say.
