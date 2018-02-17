@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="https://blog.suttna.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.suttna.com/" rel="alternate" type="text/html" /><updated>2018-02-17T00:29:44+00:00</updated><id>https://blog.suttna.com/</id><title type="html">Suttna’s Blog</title><subtitle>Suttna's Journal</subtitle><entry><title type="html">Introducing Threads</title><link href="https://blog.suttna.com/slack/teams/threads/bot/suttna/2018/01/22/threads.html" rel="alternate" type="text/html" title="Introducing Threads" /><published>2018-01-22T00:00:00+00:00</published><updated>2018-01-22T00:00:00+00:00</updated><id>https://blog.suttna.com/slack/teams/threads/bot/suttna/2018/01/22/threads</id><content type="html" xml:base="https://blog.suttna.com/slack/teams/threads/bot/suttna/2018/01/22/threads.html">&lt;p&gt;&lt;img src=&quot;/assets/posts/threads/threads.png&quot; alt=&quot;App&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;we-are-really-proud-to-announce-that-suttna-now-supports-threads-&quot;&gt;We are really proud to announce that Suttna now supports threads 😌&lt;/h1&gt;
+
+&lt;p&gt;When we started building Suttna, our main goal was to let users configure everything without leaving their messaging client.&lt;/p&gt;
+
+&lt;p&gt;Having that in mind, our first idea was to create a subset of dialogs where users would be able to just start a conversation running
+a command (e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;@suttna configure&lt;/code&gt;) and Suttna will guide them according to what they wanted to do.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/threads/excelent-idea.jpg&quot; alt=&quot;Excelent Idea&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;One of the aspects that we didn’t thought at first was, how much distraction Suttna can create on a particular channel? How can we avoid distracting team members?&lt;/p&gt;
+
+&lt;h3 id=&quot;why-should-i-get-20-message-notifications-if-im-not-even-configuring-a-checkin-right-&quot;&gt;Why should I get 20 message notifications if I’m not even configuring a checkin, right? 🤯&lt;/h3&gt;
+
+&lt;p&gt;Now that Suttna has a few months running checkins for companies around the globe, we understood that bot conversations are nice, buuut that they can be a bit annoying (just a bit 😅).&lt;/p&gt;
+
+&lt;p&gt;So we started collecting feedback from several accounts and decided that it was time to fix it.&lt;/p&gt;
+
+&lt;p&gt;Most users asked for a new config option to prevent Suttna messaging the channel right after a user finishes answering their questions,
+so all the summaries would be posted to the channel only once when the checkin finishes, but that was a solution for only one scenario,
+what about commands like &lt;code class=&quot;highlighter-rouge&quot;&gt;@suttna configure&lt;/code&gt; for example? that would still trigger a notification for each new message.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/threads/thinking.jpg&quot; alt=&quot;Thinking&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;After thinking about other solutions, we decided to use &lt;code class=&quot;highlighter-rouge&quot;&gt;threads&lt;/code&gt; (both messaging clients &lt;em&gt;Slack and MS Teams&lt;/em&gt; support them). Suttna will create a new thread when
+entering a command and continue the conversation right there. This new flow won’t generate message notifications and won’t send too many messages to the group channel,
+much better of course.&lt;/p&gt;
+
+&lt;p&gt;But it wasn’t all a bed of roses, the Slack connector (&lt;a href=&quot;https://github.com/suttna/botbuilder-slack&quot;&gt;botbuilder-slack&lt;/a&gt;) that we’ve built for
+&lt;strong&gt;Microsoft Botbuilder&lt;/strong&gt; didn’t support threads, obviously that didn’t last too much, one week after our connector supports them 😍.
+Check out here all of our contributions &lt;a href=&quot;http://github.com/suttna&quot;&gt;http://github.com/suttna&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We love to improve constantly, and your opinion really matter to us! (threads wasn’t an exception).&lt;/p&gt;
+
+&lt;p&gt;Any feedback will be more than welcome so please, write to the team at &lt;a href=&quot;mailto:feedback@suttna.com&quot;&gt;feedback@suttna.com&lt;/a&gt; if
+you have anything to say.&lt;/p&gt;</content><author><name>Santiago Doldán</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.suttna.com/posts/threads/threads.png" /></entry><entry><title type="html">New Web Application</title><link href="https://blog.suttna.com/2017/12/02/new-web-app.html" rel="alternate" type="text/html" title="New Web Application" /><published>2017-12-02T15:00:00+00:00</published><updated>2017-12-02T15:00:00+00:00</updated><id>https://blog.suttna.com/2017/12/02/new-web-app</id><content type="html" xml:base="https://blog.suttna.com/2017/12/02/new-web-app.html">&lt;p&gt;&lt;img src=&quot;/assets/posts/new-web-app.png&quot; alt=&quot;App&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A few weeks ago we rolled out a new web application that will let you search your checkin’s history.&lt;/p&gt;
+
+&lt;p&gt;Multiple customers have requested this feature, we invite everyone to try it. In order to login for first time
+in you need to ask for a login link to Suttna. &lt;code class=&quot;highlighter-rouge&quot;&gt;@suttna login&lt;/code&gt; will do the work. Suttna will send you
+a special link for you that can be used to access the web application for the first time.&lt;/p&gt;
+
+&lt;p&gt;The new application will show you all the checkin events that are associated with the checkins you are participant of.&lt;/p&gt;
+
+&lt;p&gt;You can filter the events by the checkin they belong to and the time that the event happened. It’s also possible to
+filter the events and get information from a specific person. This can be useful when trying to figure out what
+you or other team member have done in a give time period.&lt;/p&gt;
+
+&lt;p&gt;This is just the begging of our web application. We want to get feedback from our users and improve based on that. Any
+feedback will be more than welcome so please, write to the team at &lt;a href=&quot;mailto:support@suttna.com&quot;&gt;feedback@suttna.com&lt;/a&gt; if
+you have anything to say.&lt;/p&gt;</content><author><name>Martín Fernández</name></author><category term="web" /><category term="application" /><category term="new" /><category term="bot" /><category term="suttna" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.suttna.com/posts/new-web-app.png" /></entry><entry><title type="html">Welcome to Suttna!</title><link href="https://blog.suttna.com/2017/12/01/welcome.html" rel="alternate" type="text/html" title="Welcome to Suttna!" /><published>2017-12-01T15:00:00+00:00</published><updated>2017-12-01T15:00:00+00:00</updated><id>https://blog.suttna.com/2017/12/01/welcome</id><content type="html" xml:base="https://blog.suttna.com/2017/12/01/welcome.html">&lt;p&gt;Hello everyone!&lt;/p&gt;
+
+&lt;p&gt;First of all we want to thank every single user that has been using Suttna so far. Your feedback has been invaluable to us!&lt;/p&gt;
+
+&lt;p&gt;We are going to use the blog for the following purposes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Announcements&lt;/li&gt;
+  &lt;li&gt;Tips. How to take out the most from Suttna&lt;/li&gt;
+  &lt;li&gt;Technical information on how we’re building Suttna&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We are about to announce some important changes to Suttna. You can stay tuned by subscribing to our newsletter.&lt;/p&gt;
+
+&lt;p&gt;If you have any questions or issues your can always contact us at &lt;a href=&quot;mailto:support@suttna.com&quot;&gt;support@suttna.com&lt;/a&gt; or just use the &lt;code class=&quot;highlighter-rouge&quot;&gt;@suttna support&lt;/code&gt; command.&lt;/p&gt;
+
+&lt;p&gt;We hope that Suttna has been helpful for your team so far 😃&lt;/p&gt;</content><author><name>Martín Fernández</name></author><category term="suttna" /><category term="welcome" /><category term="blog" /><summary type="html">Hello everyone!</summary></entry></feed>

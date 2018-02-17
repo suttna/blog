@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link type="text/css" rel="stylesheet" href="/assets/main.css" integrity="sha384-TGbW+P7wlLIuQhTIvPtcb5nAJTLPEBhqGoOzQc9mg65PhjmFnfQ+t30E6cAPdgmv" crossorigin="anonymous">
+
+  <link rel="alternate" type="application/rss+xml" title="Suttna&#39;s Blog" href="/feed.xml">
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.png" >
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script type="text/javascript">
+    WebFont.load({
+      google: {
+        families: ["Dosis:200,300,regular,500,600,700,800"]
+      }
+    });
+  </script>
+
+  
+</head>
+
+
+  <body>
+
+    <header class="c-container u-margin-top-small" role="banner">
+  <div class="c-menu">
+    <div class="c-menu__logo">
+      <a href="https://blog.suttna.com">
+        <img src="/assets/suttna.png">
+      </a>
+    </div>
+
+    <div class="c-menu__list">
+      <a href="" class="c-menu__link js-subscribe">Subscribe</a>
+      <a href="https://blog.suttna.com" class="c-menu__link c-menu__link--active">Blog</a>
+    </div>
+  </div>
+</header>
+
+
+    <main class="c-container c-container--full-height" aria-label="Content">
+      <article class="c-post u-margin-top-large" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="c-post__title u-text-align--center">
+    Introducing Threads
+  </header>
+
+  <div class="c-post__content u-margin-top-small markdown-body" itemprop="articleBody">
+    <p><img src="/assets/posts/threads/threads.png" alt="App" /></p>
+
+<h1 id="we-are-really-proud-to-announce-that-suttna-now-supports-threads-">We are really proud to announce that Suttna now supports threads 😌</h1>
+
+<p>When we started building Suttna, our main goal was to let users configure everything without leaving their messaging client.</p>
+
+<p>Having that in mind, our first idea was to create a subset of dialogs where users would be able to just start a conversation running
+a command (e.g. <code class="highlighter-rouge">@suttna configure</code>) and Suttna will guide them according to what they wanted to do.</p>
+
+<p><br /></p>
+
+<p><img src="/assets/posts/threads/excelent-idea.jpg" alt="Excelent Idea" /></p>
+
+<p><br /></p>
+
+<p>One of the aspects that we didn’t thought at first was, how much distraction Suttna can create on a particular channel? How can we avoid distracting team members?</p>
+
+<h3 id="why-should-i-get-20-message-notifications-if-im-not-even-configuring-a-checkin-right-">Why should I get 20 message notifications if I’m not even configuring a checkin, right? 🤯</h3>
+
+<p>Now that Suttna has a few months running checkins for companies around the globe, we understood that bot conversations are nice, buuut that they can be a bit annoying (just a bit 😅).</p>
+
+<p>So we started collecting feedback from several accounts and decided that it was time to fix it.</p>
+
+<p>Most users asked for a new config option to prevent Suttna messaging the channel right after a user finishes answering their questions,
+so all the summaries would be posted to the channel only once when the checkin finishes, but that was a solution for only one scenario,
+what about commands like <code class="highlighter-rouge">@suttna configure</code> for example? that would still trigger a notification for each new message.</p>
+
+<p><br /></p>
+
+<p><img src="/assets/posts/threads/thinking.jpg" alt="Thinking" /></p>
+
+<p><br /></p>
+
+<p>After thinking about other solutions, we decided to use <code class="highlighter-rouge">threads</code> (both messaging clients <em>Slack and MS Teams</em> support them). Suttna will create a new thread when
+entering a command and continue the conversation right there. This new flow won’t generate message notifications and won’t send too many messages to the group channel,
+much better of course.</p>
+
+<p>But it wasn’t all a bed of roses, the Slack connector (<a href="https://github.com/suttna/botbuilder-slack">botbuilder-slack</a>) that we’ve built for
+<strong>Microsoft Botbuilder</strong> didn’t support threads, obviously that didn’t last too much, one week after our connector supports them 😍.
+Check out here all of our contributions <a href="http://github.com/suttna">http://github.com/suttna</a>.</p>
+
+<p>We love to improve constantly, and your opinion really matter to us! (threads wasn’t an exception).</p>
+
+<p>Any feedback will be more than welcome so please, write to the team at <a href="mailto:feedback@suttna.com">feedback@suttna.com</a> if
+you have anything to say.</p>
+
+  </div>
+
+  <p class="c-post__date u-margin-top-small">
+    <time datetime="2018-01-22T00:00:00+00:00" itemprop="datePublished">
+      
+      Jan 22, 2018
+    </time>
+    
+      • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Santiago Doldán</span></span>
+    
+  </p>
+
+  
+    
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://blog.suttna.com/slack/teams/threads/bot/suttna/2018/01/22/threads.html';
+      this.page.identifier = 'https://blog.suttna.com/slack/teams/threads/bot/suttna/2018/01/22/threads.html';
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://blog-nsht3jglq5.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+  
+</article>
+
+    </main>
+
+    <footer class="c-footer u-color--white u-margin-top-huge">
+  <div class="o-layout u-margin-top-large">
+    <div class="o-layout__item u-1/3">
+      <h3 class="c-footer-text">
+        Subscribe to stay tuned on my progress and releases!
+      </h3>
+    </div>
+
+    <div class="o-layout__item u-margin-top-small u-2/3">
+      <form class="c-form js-subscribe-form" target="https://api.suttna.com/v1/subscribers">
+        <div class="o-layout">
+          <div class="o-layout__item c-form__item--required u-3/4">
+            <input name="email" required="required" type="email" class="c-form__item" placeholder="Type your Email" />
+          </div>
+
+          <div class="o-layout__item u-1/4">
+            <button class="c-form__item c-btn c-btn--secondary">Subscribe</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="o-layout u-margin-top-large">
+    <div class="o-layout__item u-1/2">
+      <ul class="c-footer-list">
+        <li class="c-footer-element">
+          <a href="https://suttna.com" class="c-link c-link--white">© 2017 Suttna</a>
+        </li>
+        <li class="c-footer-element">
+          <a href="https://suttna.com//terms-and-conditions" class="c-link c-link--white">Terms</a>
+        </li>
+        <li class="c-footer-element">
+          <a href="https://suttna.com/privacy-policy" class="c-link c-link--white">Privacy</a>
+        </li>
+    </div>
+
+    <div class="c-footer__sm o-layout__item u-1/2">
+      <ul class="c-footer__sm__list c-footer-list">
+        <li class="c-footer-element">
+          <a href="https://instagram.com/suttnabot">
+            <img src="/assets/instagram.png">
+          </a>
+        </li>
+        <li class="c-footer-element">
+          <a href="https://facebook.com/Suttna-870854276395480">
+            <img src="/assets/facebook.png">
+          </a>
+        </li>
+        <li class="c-footer-element">
+          <a href="https://twitter.com/suttnabot">
+            <img src="/assets/twitter.png">
+          </a>
+        </li>
+        <li class="c-footer-element">
+          <a href="https://github.com/suttna">
+            <img src="/assets/github.png">
+          </a>
+        </li>
+    </div>
+  </div>
+</footer>
+
+
+    <script type="text/javascript" src="/assets/jquery/dist/jquery.min.js" integrity="sha384-KpidkPiZMnQV3PDgZTcuzhnlEb/mTAJQMQwviifPCcTaJJB4QSTqAKygj1QwKAG3" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/assets/main.js" integrity="sha384-zZRXoz1eK7BnDy9xGW2wFk9nKi0E+dxrGaN5F4pDRhWSRhVQuEa5TbGP0XI/qUpm" crossorigin="anonymous"></script>
+  </body>
+
+</html>
