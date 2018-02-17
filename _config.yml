@@ -9,6 +9,9 @@ github_username: suttna
 instagram_username: suttnabot
 facebook_username: Suttna-870854276395480
 
+disqus:
+  shortname: blog-nsht3jglq5
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
