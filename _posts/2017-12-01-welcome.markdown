@@ -4,6 +4,7 @@ author: Martín Fernández
 title:  "Welcome to Suttna!"
 date:   2017-12-01 12:00:00 -0300
 tags: [suttna, welcome, blog]
+comments: true
 ---
 Hello everyone!
 

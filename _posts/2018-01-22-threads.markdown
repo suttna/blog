@@ -4,6 +4,7 @@ author: Santiago Doldán
 title: Introducing Threads
 image: posts/threads/threads.png
 categories: slack teams threads bot suttna
+comments: true
 ---
 
 ![App](/assets/posts/threads/threads.png)

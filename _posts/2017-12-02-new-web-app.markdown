@@ -5,6 +5,7 @@ title: "New Web Application"
 image: posts/new-web-app.png
 date: 2017-12-02 12:00:00 -0300
 tags: [web, application, new, bot, suttna]
+comments: true
 ---
 
 ![App](/assets/posts/new-web-app.png)
